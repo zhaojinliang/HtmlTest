@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定制input元素</title>
+
+    <body>
+        <form action="">
+            <hr>
+            <form action="">
+                用input元素生成图像按钮和分区响应图 <br> 用image型input元素
+                <input type="inage" src="accept.png" name="submit"><br> 用input上传文件
+                <input type="file" name="filedata"><br>
+
+                <label for=""><input type="text">
+            <label for=""><input type="text"></label>
+                <label for=""><input type="text"></label>
+            </form>
+
+            <hr> 使用email，tel,url型input元素，用input元素获取时间和日期
+            <p><label for="name">Name:<input value="Adam" id="name" name="name" type=""></label></p>
+            <p><label for="password">Password:<input placeholder="Min 6 characters" value="password" id="" name="password" type="password"></label></p>
+            <p><label for="email">Email:<input value="" placeholder="user@domain.com" id="" name="" type="email"></label></p>
+            <p><label for="tel">Tel:<input value="" placeholder="(xxx)-xxx-xxxx" id="" name="" type="tel"></label></p>
+            <p><label for="url">Your Homepage:<input value="" id="url" name="url" type="url"></label></p>
+            用input元素获取时间和日期date
+            <p><label for="lastbuy">When did you last buy:<input id="lastbuy" name="lastbuy" type="date"></label></p>
+            用input元素获取颜色值color
+            <p><label for="color">Color:<input type="color" id="color" name="color"></label></p>
+            用input元素获取搜索用词search
+            <p><label for="search">Search:<input type="search" id="search" name="search"></label></p>
+            用hidden型input元素--用input元素生成隐藏数据项
+            <p><label for="name"><input value="Adam" id="name" name="name" type=""></label></p>
+
+
+            <p><label for=""><input type="text"></label></p>
+            <input type="submit" value="Submit Vote">
+        </form>
+        <form method="post" action="http://titian8080">
+            <hr> 用radio型input元素生成一组固定选项
+            <fieldset>
+                <label for="password">password:<input placeholder="Min 6 characters" maxlength="10" id="password" name="password" type="radio"></label>
+                <label for="name">Name:<input placeholder="Your Name" maxlength="10" id="name" name="name" type="radio"></label>
+                <label for="city">City:<input placeholder="Where you live" size="10" id="city" name="city" type="radio"></label>
+                <label for="fave">Fruit:<input list="fruitlist" value="Apple" size="10" maxlength="10" id="fave" name="fave" type="radio"></label>
+            </fieldset>
+
+            <hr> 使用number型input元素，min,max,step,value
+            <p><label for="price">$per unit in your area <input type="number" step="1" min="1" max="100" value="1" id="price" 
+        name="price"></label></p>
+            使用range型input元素，step，min,max,value
+            <p><label for="price">$per unit in your area 1<input type="range" step="1" min="1" max="100" value="1" id="price" name="price">100</label></p>
+            用input生成复选框，checked，required，value--布尔型输入
+            <p><label for="veggie">Are you vegetarian:<input type="checkbox" id="veggie" name="veggie"></label></p>
+
+            <hr> 设置元素大小maxlegth和size，设置初始值value和placeholder,使用数据列表datalist,用input元素输入密码、按钮type设为password，button,
+            <p><label for="password">password:<input placeholder="Min 6 characters" maxlength="10" id="password" name="password" type="password"></label></p>
+            <p><label for="name">Name:<input placeholder="Your Name" maxlength="10" id="name" name="name" type=""></label></p>
+            <p><label for="city">City:<input placeholder="Where you live" size="10" id="city" name="city" type=""></label></p>
+            <p><label for="fave">Fruit:<input list="fruitlist" value="Apple" size="10" maxlength="10" id="fave" name="fave" type=""></label></p>
+            <button type="submit">Submit Vote</button>
+            <input type="submit" value="Submit Vote">
+            <input type="reset" value="Reset From">
+            <input type="button" value="My Button">
+
+
+        </form>
+        <hr>
+        <form method="post" action="http://titian8080">
+            设置元素大小maxlegth和size，设置初始值value和placeholder,使用数据列表datalist,用input元素输入密码、按钮type设为password，button
+            <p><label for="password">password:<input placeholder="Min 6 characters" maxlength="10" id="password" name="password" type="password"></label></p>
+            <p><label for="name">Name:<input placeholder="Your Name" maxlength="10" id="name" name="name" type=""></label></p>
+            <p><label for="city">City:<input placeholder="Where you live" size="10" id="city" name="city" type=""></label></p>
+            <p><label for="fave">Fruit:<input list="fruitlist" value="Apple" size="10" maxlength="10" id="fave" name="fave" type=""></label></p>
+            <button type="submit">Submit Vote</button>
+            <input type="submit" value="Submit Vote">
+            <input type="reset" value="Reset From">
+            <input type="button" value="My Button">
+        </form>
+        <hr>
+        <form method="post" action="http://titian8080">
+            设置元素大小maxlegth和size，设置初始值value和placeholder,使用数据列表datalist,使用readonly和disabled生成只读和禁用文本框
+            <p><label for="name">Name:<input disabled placeholder="Your Name" maxlength="10" id="name" name="name" type=""></label></p>
+            <p><label for="city">City:<input readonly placeholder="Where you live" size="10" id="city" name="city" type=""></label></p>
+            <p><label for="fave">Fruit:<input list="fruitlist" value="Apple" size="10" maxlength="10" id="fave" name="fave" type=""></label></p>
+            <button type="submit">Submit Vote</button>
+        </form>
+        <datalist id="fruitlist">
+            <option value="Apples" label="Lovely Apples" />
+            <option value="Oranges">Refreshing Oranges</option>
+            <option value="Cherries" />
+        </datalist>
+    </body>
+
+</html>

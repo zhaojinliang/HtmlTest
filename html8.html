@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>标记文字</title>
+
+    <style>
+        b{
+            font-weight: bold;
+        }
+
+        em,i{
+            font-style: italic;
+        }
+
+        s{
+            text-decoration: line-through;
+        }
+
+        strong{
+            font-weight: bolder;
+        }
+
+        u{
+            text-decoration: underline;
+        }
+
+        small{
+            font-size: smaller;
+        }
+
+        sub{
+            vertical-align: sub;
+            font-size: smaller;
+        }
+
+        sup{
+            vertical-align: super;
+            font-size: smaller; 
+        }
+
+        q{
+            display: inline;
+        }
+
+        q:before{
+            content: open-quote;
+        }
+
+        q:after{
+            content: close-quote;
+        }
+
+        .fruit{
+            border: thin solid black;
+            padding: 1px;
+        }
+
+        mark{
+            background-color: yellow;
+            color: black;
+        }
+
+        ins{
+            text-decoration: underline;
+        }
+
+        del{
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+<body>
+    <hr>
+    --生成内部超链接--<br>
+    You can see other fruit I like<a href="#fruits">here</a><br>
+    <p id="fruits">
+        I also like bananas,mangoes;
+    </p>
+
+    <hr>
+    --表示关键词和产品名称b--<br>
+    I like <b>apples</b>and <b>oranges</b><br>
+    <hr>
+    --加以强调em--<br>
+    <em>I</em> like <b>apples</b>and <b>oranges</b><br>
+    <hr>
+    --表示外文词语或科技术语i--<br>
+    My favourite kind of orange is the mandarin,properly known as <i>citrus reticulate </i><br>
+
+    <hr>
+    --表示不准确或者矫正s--<br>
+    Orange at my local store cost <s>$1 each</s>$2 for 3<br>
+
+    <hr>
+    --表示重要文字strong--<br>
+    <strong>Warning:</strong>Eating too many oranges can give you heart burn;<br>
+
+
+    <hr>
+    --为文字添加下划线--<br>
+    <strong>Warning:</strong>Eating too many <u>oranges</u> can give you heart burn;<br>
+
+
+    <hr>
+    --添加小号字体内容--<br>
+    Orange at my local store cost <s>$1 each</s>$2 for 3 <small>(plus tax)</small><br>
+
+
+    <hr>
+    --添加上标和下表-- <br>
+    The point x<sub>10</sub> is the 10 <sup>th</sup>point. <br>
+
+    <hr>
+    --表示输入和输出-- <br>
+    <P>计算机代码片段code</P>
+    <code>
+        var fruits=["apples","oranges","mangoes","chrees"]; <br>
+        document.writeln("I like"+fruits.length+"fruits");
+    </code>
+    <p>变量var</p>
+    <P>The variable in this example is <var>fruits</var></P>
+    <P>表示计算机或者程序的输出</P>
+    <P>The output from the code is: <samp>I like 4 fruits</samp></P>
+    <P>表示用户输入</P>
+    <P>When prompted for my favourite fruit ,I type: <kbd>cherries</kbd></P>
+
+
+    <hr>
+    --使用标题引用、引文、定义、和缩写-- <br>
+    <p>表示缩写abbr</p>
+    The <abbr title="Florida Department of citrus">FDOC </abbr>
+    <p>定义术语dfn</p>
+    <p>The <dfn title="apple">apple</dfn> is the pomaceous fruit of the apple tree,species Malus domestica in the rose family </p>
+    <P>引用来自他处的内容q</P>
+    <P>
+        <q cite="http://en.wikipedia.org/wiki/apple">The <dfn title="apple">Apple</dfn> is the pomaceous fruit of the apple tree,species Malus domestica in the rose family
+        </q>
+    </P>
+
+    <hr>
+    --其他文本元素-- <br>
+    <P>span元素</P>
+    <P>I also like <span class="fruit">apple</span>  and <span class="fruit">orange</span></P>
+    <p>突出显示文本mark</p>
+    <p>I also like <mark>apple</mark>  and <mark>orange</mark></p>
+    <P>表示添加ins和删除的脸的内容</P>
+    <P>
+        <del>I also like <mark>apple</mark>  and <mark>orange</del> <br>
+        <ins>I also like <mark>apple</mark>  and <mark>orange</ins>
+    </P>
+
+    <P>表示日期和时间time</P>
+    <p>I bought it at <time datetime="15:00">3 o'clock</time> on <time datetime="1984-12-7">December 7th</time></p>
+
+</body>
+</html>

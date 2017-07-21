@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html5</title>
+    <style type="text/css">
+        .class2{
+            background-color: grey;
+            color: white;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        .class1{
+            font-size: x-large;
+        }
+        
+    #W3cclink{
+        background: gray;
+        color: white;
+        padding: 5px;
+        border: thin solid black;
+        }
+    </style>
+
+    <script>
+        var toggleHidden=function(){
+            var elem=document.getElementById("toggle");
+            if(elem.hasAttribute("hidden")){
+                elem.removeAttribute("hidden");
+            }
+            else{
+                elem.setAttribute("hidden","hidden");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!--accesskry属性-->
+   -- accesskry属性--
+   <p>
+    <form action="">
+        name:<input type="text" name="name" accesskey="n">
+        <p>
+        password:<input type="password" name="pasword" accesskey="p">
+        <p>
+        <input type="submit" name="" value="Log In" accesskey="s">
+    </form>
+    <hr>
+
+    <!--id属性-->
+    --id属性--
+    <p>
+    <a href="http://appres.com">Apress web</a>
+    <p>
+    <a id="W3clink" href="http://w3c.org">W3c web site</a>
+    <p>
+    <hr>
+
+    <!--class属性-->
+    --class属性--
+    <p>
+    <a class="class1 class2" href="http://appres.com">Apress web</a>
+    <p>
+    <a class="class2 otherclass" href="http://w3c.org">W3c web site</a>
+    <p>
+    <hr>
+
+    <!--contenteditablt属性-->
+    --contenteditablt属性--
+    <p>
+    <p contenteditable="ture">It is raining right now</p>
+    <hr>
+
+    <!--dir属性-->
+    --dir属性--<p>
+    <p dir="rtl">This is right-to-left</p>
+    <P dir="ltr">Thi is left-to-right</P>
+    <hr>
+
+    <!--hidden属性-->
+    --hidden属性--<p>
+    <button type="" onclick="toggleHidden()">Toggle</button>
+    <table>
+        <tr><th>Name</th><th>City</th></tr>
+        <tr><td>Adam Freeman</td><td>Londoon</td></tr>
+        <tr id="toggle" hidden><td>Joe Smith</td><td>New York</td></tr>
+        <tr><td>Anne Jones</td><td>Paris</td></tr>
+    </table>
+    <hr>
+    
+    <!--spellcheck属性-->
+    --spellcheck属性--<p>
+    <textarea rows="" cols="" spellcheck="ture">This is some mispelltext </textarea>
+    <hr>
+    <!---->
+</body>
+</html>

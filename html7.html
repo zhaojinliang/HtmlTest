@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>创建HTML文档</title>
+    <link rel="stylesheet" type="text/css" href="../text.css">
+    <!--link载入外部样式表-->
+    <link rel="shortcut icon" href="image.ico" type="image/x-icon">
+    <!--link添加网站标志-->
+    <link rel="prefetch" href="/page.html/">
+    <!--link预先获取关联资源-->
+
+
+    <style type="text/css" media="screen">
+    /*media指定样式适用媒体*/
+    </style>
+
+    <script>
+        document.write("This is form the script")
+    </script>
+
+    <!--加载外部脚本文件-->
+    <script src="simple.js"></script>
+</head>
+<body>
+    <hr>
+    --Doctype元素--
+    <hr>
+    1.处理的是Html文档
+    <p>
+    2.标记文档内容的HTML所属版本
+    <p>
+    
+    --用元数据说明文档--
+    <hr>
+    meta name="author" content="Adam Freeman"<br>
+    meta name="description" content="A simple example"<br>
+    name属性表示元数据类型，content属性用来提供值
+    <p>
+
+    --meta声明字符编码--
+    <hr>
+    meta charset="UTF-8"<br>
+
+    --模拟http标头字段--
+    <hr>
+    meta http-equiv="refresh" content="5"
+    <p>
+
+    --异步执行脚本--
+    <br>
+    <script anync src="simple2.js"></script>
+    <script defer src="simple2.js"></script>
+    <P>
+        I like <code id="applecode">apple </code>
+    </P>
+
+</body>
+</html>

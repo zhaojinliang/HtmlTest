@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格元素</title>
+    <style>
+        tr>th {
+            text-align: left;
+            background: grey;
+            color: white
+        }
+
+        tr>th:only-of-type {
+            text-align: right;
+            background: lightgrey;
+            color: grey;
+        }
+
+        thead th,
+        tfoot th {
+            text-align: left;
+            background: grey;
+            color: white
+        }
+
+        tbody th {
+            text-align: right;
+            background: lightgrey;
+            color: grey;
+        }
+
+        [colspan],
+        [rowspan] {
+            font-weight: bold;
+            border: meduim solid black;
+        }
+
+        thead[colspan],
+        tfoot[colspan] {
+            text-align: center;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: large;
+            margin-bottom: 5px;
+        }
+
+        #colgroup1 {
+            background: red;
+        }
+
+        #colgroup2 {
+            background: green;
+            font-size: small
+        }
+        
+        #col3 {
+            background: pink;
+            font-size: small
+        }
+    </style>
+</head>
+
+<body>
+    <hr> 表示个别的列
+    <table border="1">
+        <!-- 设置表格边框  -->
+        <caption>Result of 2011 Fruit surey</caption>
+        <colgroup id="colgroup1" span="3">
+            <colgroup id="colgroup2">
+                <col id="col1And2" span="2">
+                <col id="col3">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th id="rand">Rank</th>
+                    <th id="name">Name</th>
+                    <th id="color">Color</th>
+                    <th id="sizeandvotes" colspan="2">Size&votes</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th colspan="5">&copy;2011 djsjfsfjsljskdfjs </th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <th id="first" headers="rank">Favourite:</th>
+                    <td headers="rank first">Apple</td>
+                    <td headers="color first">Green</td>
+                    <td headers="sizeandvotes first">Medium</td>
+                    <td headers="sizeandvotes first">500</td>
+                </tr>
+                <tr>
+                    <th id="second" headers="rank">2nd Favourite:</th>
+                    <td headers="rank second">Oranges</td>
+                    <td headers="color second">Orange</td>
+                    <td headers="sizeandvotes second">Larger</td>
+                    <td headers="sizeandvotes second">450</td>
+                </tr>
+                <tr>
+                    <th>3rd Favourite:</th>
+                    <td>Pomegranate</td>
+                    <td colspan="2" rowspan="2">A kinf of green-red Varirs form medium to larger</td>
+                    <td>203</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">joint 4th:</th>
+                    <td>Cherries</td>
+                    <td rowspan="2">75</td>
+                </tr>
+                <tr>
+                    <td>Pineapple</td>
+                    <td>Brown</td>
+                    <td>VeryLager</td>
+                </tr>
+            </tbody>
+
+    </table>
+    <hr> 处理列
+    <table>
+        <caption>Result of 2011 Fruit surey</caption>
+        <colgroup id="colgroup1" span="3" />
+        <colgroup id="colgroup2" span="2">
+            <thead>
+                <tr>
+                    <th id="rand">Rank</th>
+                    <th id="name">Name</th>
+                    <th id="color">Color</th>
+                    <th id="sizeandvotes" colspan="2">Size&votes</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th colspan="5">&copy;2011 djsjfsfjsljskdfjs </th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <th id="first" headers="rank">Favourite:</th>
+                    <td headers="rank first">Apple</td>
+                    <td headers="color first">Green</td>
+                    <td headers="sizeandvotes first">Medium</td>
+                    <td headers="sizeandvotes first">500</td>
+                </tr>
+                <tr>
+                    <th id="second" headers="rank">2nd Favourite:</th>
+                    <td headers="rank second">Oranges</td>
+                    <td headers="color second">Orange</td>
+                    <td headers="sizeandvotes second">Larger</td>
+                    <td headers="sizeandvotes second">450</td>
+                </tr>
+                <tr>
+                    <th>3rd Favourite:</th>
+                    <td>Pomegranate</td>
+                    <td colspan="2" rowspan="2">A kinf of green-red Varirs form medium to larger</td>
+                    <td>203</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">joint 4th:</th>
+                    <td>Cherries</td>
+                    <td rowspan="2">75</td>
+                </tr>
+                <tr>
+                    <td>Pineapple</td>
+                    <td>Brown</td>
+                    <td>VeryLager</td>
+                </tr>
+            </tbody>
+
+    </table>
+    <hr> 给表格添加标题
+    <table>
+        <caption>Result of 2011 Fruit surey</caption>
+        <thead>
+            <tr>
+                <th id="rand">Rank</th>
+                <th id="name">Name</th>
+                <th id="color">Color</th>
+                <th id="sizeandvotes" colspan="2">Size&votes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            <tr>
+                <th colspan="5">&copy;2011 djsjfsfjsljskdfjs </th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th id="first" headers="rank">Favourite:</th>
+                <td headers="rank first">Apple</td>
+                <td headers="color first">Green</td>
+                <td headers="sizeandvotes first">Medium</td>
+                <td headers="sizeandvotes first">500</td>
+            </tr>
+            <tr>
+                <th id="second" headers="rank">2nd Favourite:</th>
+                <td headers="rank second">Oranges</td>
+                <td headers="color second">Orange</td>
+                <td headers="sizeandvotes second">Larger</td>
+                <td headers="sizeandvotes second">450</td>
+            </tr>
+            <tr>
+                <th>3rd Favourite:</th>
+                <td>Pomegranate</td>
+                <td colspan="2" rowspan="2">A kinf of green-red Varirs form medium to larger</td>
+                <td>203</td>
+            </tr>
+            <tr>
+                <th rowspan="2">joint 4th:</th>
+                <td>Cherries</td>
+                <td rowspan="2">75</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <hr> 表头和单元格关联起来
+    <table>
+        <thead>
+            <tr>
+                <th id="rand">Rank</th>
+                <th id="name">Name</th>
+                <th id="color">Color</th>
+                <th id="sizeandvotes" colspan="2">Size&votes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            <tr>
+                <th colspan="5">&copy;2011 djsjfsfjsljskdfjs </th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th id="first" headers="rank">Favourite:</th>
+                <td headers="rank first">Apple</td>
+                <td headers="color first">Green</td>
+                <td headers="sizeandvotes first">Medium</td>
+                <td headers="sizeandvotes first">500</td>
+            </tr>
+            <tr>
+                <th id="second" headers="rank">2nd Favourite:</th>
+                <td headers="rank second">Oranges</td>
+                <td headers="color second">Orange</td>
+                <td headers="sizeandvotes second">Larger</td>
+                <td headers="sizeandvotes second">450</td>
+            </tr>
+            <tr>
+                <th>3rd Favourite:</th>
+                <td>Pomegranate</td>
+                <td colspan="2" rowspan="2">A kinf of green-red Varirs form medium to larger</td>
+                <td>203</td>
+            </tr>
+            <tr>
+                <th rowspan="2">joint 4th:</th>
+                <td>Cherries</td>
+                <td rowspan="2">75</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <hr> 制作不规则表格
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th colspan="2">Size&votes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Size</th>
+            </tr>
+            <tr>
+                <th colspan="5">&copy;2011 djsjfsfjsljskdfjs </th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th>Favourite:</th>
+                <td>Apple</td>
+                <td>Green</td>
+                <td>Medium</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <th>2nd Favourite:</th>
+                <td>Oranges</td>
+                <td>Orange</td>
+                <td>Larger</td>
+                <td>450</td>
+            </tr>
+            <tr>
+                <th>3rd Favourite:</th>
+                <td>Pomegranate</td>
+                <td colspan="2" rowspan="2">A kinf of green-red Varirs form medium to larger</td>
+                <td>203</td>
+            </tr>
+            <tr>
+                <th rowspan="2">joint 4th:</th>
+                <td>Cherries</td>
+                <td rowspan="2">75</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <hr> 给表格添加结构
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Size</th>
+        </tr>
+        <tr>
+            <th>Favourite:</th>
+            <td>Apple</td>
+            <td>Green</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <th>2nd Favourite:</th>
+            <td>Oranges</td>
+            <td>Orange</td>
+            <td>Larger</td>
+        </tr>
+        <tr>
+            <th>3rd Favourite:</th>
+            <td>Pomegranate</td>
+            <td>A kinf of green-red</td>
+            <td>Varirs form medium to larger</td>
+        </tr>
+
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td>Apple</td>
+            <td>Green</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <td>Oranges</td>
+            <td>Orange</td>
+            <td>Larger</td>
+        </tr>
+        <tr>
+            <td>Pomegranate</td>
+            <td>A kinf of green-red</td>
+            <td>Varirs form medium to larger</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

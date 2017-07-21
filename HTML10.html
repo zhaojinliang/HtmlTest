@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文档分节</title>
+    <style>
+        h1,h2,h3{
+            background: grey;
+            color: white
+        }
+         hgroup>h1{
+            margin-bottom: 0px;
+        }
+        hgroup>h2{
+            background: grey;
+            color: white;
+            font-size: 1em;
+            margin-top: 0px;
+        } 
+        body>header *,footer *{
+            background: transparent;
+            color: black;
+        }
+        body>section,body>section>section,body>section>section>section{
+            margin-left: 10px;
+        }
+        body>header,body>footer{
+            border: medium solid black;
+            padding-left: 5px;
+            margin: 10px 0 10px 0;
+        }
+        body>nav{
+            text-align: center;
+            padding: 2px;
+            border: dashed thin black;
+        }
+        details>summary{
+            font-weight: blod;
+        }
+    </style>
+</head>
+<body>
+    --使用h1，h2... -- <br>
+    <header>
+        <hgroup>
+            <h1>Fruit i like</h1>
+            <h2>Fruit i like</h2>
+        </hgroup>
+        <nav>
+            <h1>Content</h1>
+            <ul>
+                <li>Fruit I like </li>
+                <ul>
+                    <li>Additionnal Fruit</li>
+                </ul>
+                <li>Activeties i like</li>
+                <ul>
+                    <li>Kinds of Trandition</li>
+                    <li>Kind of triathlon I am aiming for</li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <!--解决子标题不是子标题，看起来像节标题的问题  -->
+        <hgroup>
+            <h1>Fruit i like</h1>
+            <h2>Fruit i like</h2>
+        </hgroup>
+        I like apples and oranges
+        <section>
+            <h2>Fruit i like</h2>
+            I like apples and oranges
+            <section>
+                <h3>Fruit i like</h3>
+                I like apples and oranges   
+            </section>
+        </section>
+     </section>
+     <ol>
+        <li>bananas</li>
+        <li>mangoes</li>
+        <li>cherries</li>
+        <li>plums</li>
+        <li>peaches</li>
+        <li>grapes</li>
+    </ol>
+    <article>
+        <header>
+        <hgroup>
+            <h1>Fruit i like</h1>
+            <h2>Fruit i like</h2>
+        </hgroup>
+        <nav>
+            <h1>Content</h1>
+            <ul>
+                <li>Fruit I like </li>
+                <ul>
+                    <li>Additionnal Fruit</li>
+                </ul>
+                <li>Activeties i like</li>
+                <ul>
+                    <li>Kinds of Trandition</li>
+                    <li>Kind of triathlon I am aiming for</li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <!--解决子标题不是子标题，看起来像节标题的问题  -->
+        <hgroup>
+            <h1>Fruit i like</h1>
+            <h2>Fruit i like</h2>
+        </hgroup>
+        I like apples and oranges
+        <section>
+            <h2>Fruit i like</h2>
+            I like apples and oranges
+            <section>
+                <h3>Fruit i like</h3>
+                I like apples and oranges   
+            </section>
+        </section>
+     </section>
+     <ol>
+        <li>bananas</li>
+        <li>mangoes</li>
+        <li>cherries</li>
+        <li>plums</li>
+        <li>peaches</li>
+        <li>grapes</li>
+    </ol>
+
+    
+        <footer id="mainfooter">
+            &#169;2011,shdjshjsh.
+        </footer>
+    </article>
+    <details>
+        <summary>I like apples and oranges</summary>
+        <section>
+            <h2>Fruit i like</h2>
+            I like apples and oranges
+            <section>
+                <h3>Fruit i like</h3>
+                I like apples and oranges   
+            </section>
+        </section>
+    </details>
+
+
+<footer id="mainfooter">
+    &#169;2011,shdjshjsh.
+</footer>
+
+
+
+
+</body>
+</html>

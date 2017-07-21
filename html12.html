@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+    <base href="http://titian8080">
+</head>
+
+<body>
+    <form method="post" action="http://titan:8080/form">
+        <input name="fave" type="">
+        <button type="">Submit vote</button>
+    </form>
+    <!--配置表单的action属性  -->
+    <hr> 配置表单的action,autocomplete,target属性,设置表单名称name
+    <form id="fruitvote" name="fruitvote" autocomplete="off" target="_black" method="post" action="http://titan:8080/form">
+        <hr> 在表单中添加说明标签label,自动聚焦到某个input用autofocus,禁用某个input用disabled
+        <br>
+        <p><label for="fave">Fruit: <input autofocus id="fave" name="fave" type=""></label></p>
+        <p><label for="name">Name:<input disabled id="name" name="name" type=""></label></p>
+        <button type="">Submit vote</button>
+    </form>
+    <hr> 对表单分组fieldset,给fieldset添加说明标签legend，禁用整组fielset用disabled属性
+    <form method="POST" action="http://titian8080/form">
+        <fieldset>
+            <legend>Enter your Details</legend>
+            <p><lable for="name">Name:<input type="" name="name" id="name"></lable></p>
+            <p><lable for="name">City:<input type="" name="city" id="city"></lable></p>
+        </fieldset>
+        <fieldset disabled>
+            <legend>Vote For Your three favourite fruit</legend>
+            <p><label for="fave1">#1:<input id="fave1" name="fave1" type=""></label></p>
+            <p><label for="fave2">#2:<input id="fave2" name="fave2" type=""></label></p>
+            <p><label for="fave3">#3:<input id="fave3" name="fave3" type=""></label></p>
+        </fieldset>
+        使用button元素提交表单,使用button元素重置表单,button作为一般元素<br>
+        <button type="submint" formaction="http://titian8080" formmethod="post">Submit Vote</button>
+        <button type="reset">reset</button>
+        <button type="button">Do <strong>NOT</strong> press this button</button>
+    </form>
+</body>
+
+</html>
